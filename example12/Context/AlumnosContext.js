@@ -14,8 +14,7 @@ const AlumnosProvider = (props)=>{
     })
 
     const [lista, setLista]= useState([]);
-    const [listaSelected, setListaSelected]= useState([]);
-
+    
     useEffect(()=>{
         firebase.database().ref('Ropa').on('value', snapshot=>{
             let ropaLista=[];
@@ -46,12 +45,7 @@ const AlumnosProvider = (props)=>{
         setLista(temporal)
     }
 
-    const addSelect=(t)=>{
-        const temporal = lista.filter((selected)=>{
-            return selected.temporada=== t;
-        })
-        setListaSelected(temporal)
-    }
+    
     return(
         <AlumnosContext.Provider
             value={{
@@ -60,9 +54,6 @@ const AlumnosProvider = (props)=>{
                 setRopa,
                 setLista,
                 eliminar,
-                setListaSelected,
-                listaSelected,
-                addSelect
             }}
         >
             {props.children}
