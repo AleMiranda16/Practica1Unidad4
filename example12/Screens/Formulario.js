@@ -40,7 +40,7 @@ export default function Formulario({route,navigation}){
                         talla:"",
                         descripcion:""
                     })
-                    navigation.goBack();
+                    navigation.navigate('Listado')
 
                     console.log(lista) 
                 }}

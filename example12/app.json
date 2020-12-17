@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "example12",
-    "slug": "example12",
+    "name": "Practica1Unidad4",
+    "slug": "practica1unidad4",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -27,6 +27,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "Mi proyecto es una aplicación móvil que presenta los dos tipos de navegaciones, la creación de un formulario, y la conexión a una base de datos a través de firebase. Realiza inserciones, modificaciones y eliminaciones de prendas en un inventario de ropa. \nTambien realiza consultas por temporada.\n",
+    "githubUrl": "https://github.com/AleMiranda16/Practica1Unidad4.git"
   }
 }

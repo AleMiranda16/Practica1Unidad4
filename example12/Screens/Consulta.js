@@ -7,7 +7,6 @@ const Consulta = () => {
     const {setListaSelected,listaSelected,addSelect} = useContext(AlumnosContext);
     return (
         <View style={styles.container}>
-           <View style={styles.container}>
             <Picker
                 style={{ height: 50, width: 150 }}
                 onValueChange={(itemValue, itemIndex) => addSelect(itemValue)}
@@ -18,13 +17,12 @@ const Consulta = () => {
                 <Picker.Item label="Otoño" value="Otoño" />
                 <Picker.Item label="Invierno" value="Invierno" />
             </Picker>
-            </View>
             <ScrollView>
         {
             listaSelected.length>0
             ?
             listaSelected.map((a,i)=>(
-                <ListItem key={i} bottomDivider>
+                <ListItem key={i} bottomDivider style={{marginTop:50, textAlign:'center', fontSize:20, width:400}}>
                     <ListItem.Content>
                         <ListItem.Title>{a.id}</ListItem.Title>
                         <ListItem.Subtitle>{a.descripcion}</ListItem.Subtitle>
